@@ -1,3 +1,5 @@
+require "pry"
+
 class CashRegister
   attr_accessor :discount , :total 
   attr_reader :items
@@ -11,6 +13,7 @@ class CashRegister
   
   def add_item(title, price, quantity=1)
     @total += price*quantity
+    binding.pry
     @items << title
   end
     
