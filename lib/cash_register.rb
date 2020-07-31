@@ -2,6 +2,8 @@ require "pry"
 
 class CashRegister
   attr_accessor :discount , :total 
+  attr_reader :items
+  
   
   def initialize (discount=0) 
     @discount= discount 
@@ -26,9 +28,5 @@ class CashRegister
       "After the discount, the total comes to $#{@total}."
     end 
    end 
-   
-   def item
-     @item
-  end 
     
 end 
