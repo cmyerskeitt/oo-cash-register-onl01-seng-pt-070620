@@ -15,10 +15,7 @@ class CashRegister
     @total += price*quantity
     quantity.times{@items << title}
   end
-    
-    # 
-    # #quantity.times.do
-    # #@items << title
+
   
   def apply_discount
     if @discount == 0 
@@ -28,5 +25,8 @@ class CashRegister
       "After the discount, the total comes to $#{@total}."
     end 
    end 
+  
+  def void_last_transaction 
     
+  end
 end 
