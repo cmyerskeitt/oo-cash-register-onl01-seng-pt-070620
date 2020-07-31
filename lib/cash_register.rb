@@ -21,7 +21,7 @@ class CashRegister
     if @discount == 0 
       "There is no discount to apply."
     else 
-      self.total = @total - (@total / 100 * @discount)
+      @total = @total - (@total / 100 * @discount)
       "After the discount, the total comes to $#{@total}."
     end 
    end 
